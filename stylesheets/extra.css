@@ -9,7 +9,7 @@
 
 /* Muda a cor de fundo da área de texto principal */
 .wy-nav-content-wrap {
-    background: #faf9f2; /* Cor clara padrão */
+    background: #000000; /* Cor clara padrão */
 }
 
 /* Se quiser colocar uma imagem de fundo (ex: um mapa suave) */
@@ -23,7 +23,7 @@
     border: 2px solid #000000;
     border-radius: 8px;
     padding: 15px;
-    background-color: #eaf2f8;
+    background-color: #000000;
     margin-bottom: 20px;
 }
 
