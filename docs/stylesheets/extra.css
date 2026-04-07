@@ -1,40 +1,26 @@
-/* ===== Paleta de Cores Customizada para Material for MkDocs ===== */
-
-/* Cores primárias do tema (sidebar, header, links) */
-:root {
-    --md-primary-fg-color: #4a4a4a;        /* Cinza escuro — cabeçalho e sidebar */
-    --md-primary-fg-color--light: #606060;  /* Cinza médio */
-    --md-primary-fg-color--dark: #333333;   /* Cinza mais escuro */
-    --md-accent-fg-color: #eee239;          /* Amarelo vibrante — destaques e hover */
+/* 1. Barra Lateral em Cinza */
+.wy-nav-side {
+    background: #4a4a4a !important; /* Um cinza médio/escuro */
 }
 
-/* Fundo do conteúdo principal */
-.md-main {
-    background: #fdfdfd;
+/* 2. Bloco de Busca em Amarelo */
+.wy-side-nav-search {
+    background-color: #eee239 !important; /* Amarelo vibrante */
 }
 
-/* Campo de busca — fundo amarelo */
-.md-search__form {
-    background-color: rgba(238, 226, 57, 0.15) !important;
+/* 3. Ajuste do texto e links dentro do bloco amarelo para ficarem legíveis (pretos) */
+.wy-side-nav-search > a, 
+.wy-side-nav-search .wy-dropdown > a,
+.wy-side-nav-search input[type="text"] {
+    color: #2c3e50 !important;
 }
 
-/* Hover nos itens do menu lateral */
-.md-nav__link:hover {
-    color: #eee239 !important;
+/* 4. Cor de fundo do conteúdo principal (Cinza bem clarinho para não cansar a vista) */
+.wy-nav-content-wrap {
+    background: #fdfdfd !important;
 }
 
-/* Item ativo no menu lateral */
-.md-nav__link--active {
-    color: #eee239 !important;
-    font-weight: 700;
-}
-
-/* Botão de voltar ao topo */
-.md-top {
-    background-color: #4a4a4a;
-}
-
-.md-top:hover {
-    background-color: #eee239;
-    color: #2c3e50;
+/* Opcional: Mudar a cor do cabeçalho da tabela de conteúdos quando selecionado */
+.wy-menu-vertical li.current {
+    background: #606060;
 }

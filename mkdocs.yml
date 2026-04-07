@@ -2,19 +2,7 @@ site_name: Documentação - Classificação Pastagem Santa Catarina
 site_author: Guilherme Vaz
 
 theme:
-  name: material
-  language: pt-BR
-  palette:
-    primary: custom
-    accent: yellow
-  font:
-    text: Roboto
-    code: Roboto Mono
-  features:
-    - navigation.sections
-    - navigation.expand
-    - navigation.top
-    - toc.integrate
+  name: readthedocs
 
 extra_css:
   - stylesheets/extra.css
