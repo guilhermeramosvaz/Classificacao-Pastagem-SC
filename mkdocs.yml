@@ -8,9 +8,9 @@ extra_css:
   - stylesheets/extra.css
  
 nav:
-  - 'Home': 'index.md'
-  - 'Ingestão de Dados': 'readme_teste.md'
-  - 'Pré-processamento': 'Pré processamento dos dados.md'
-  - 'Conversão de estrutura Matricial': 'Conversão de estrutura Matricial.md'
-  - 'Hierarquização': 'Hierarquização.md'
-  - 'Integração Fundiária e Ambiental': 'Integração Fundiária e Ambiental.md'
+  - 'Home': 'mds/index.md'
+  - 'Ingestão de Dados': 'mds/readme_teste.md'
+  - 'Pré-processamento': 'mds/Pré processamento dos dados.md'
+  - 'Conversão de estrutura Matricial': 'mds/Conversão de estrutura Matricial.md'
+  - 'Hierarquização': 'mds/Hierarquização.md'
+  - 'Integração Fundiária e Ambiental': 'mds/Integração Fundiária e Ambiental.md'

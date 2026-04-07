@@ -1,0 +1,20 @@
+/* 1. Mudar a cor da Barra Lateral para Cinza */
+.wy-nav-side {
+    background: #404040 !important; /* Cinza escuro */
+}
+
+/* 2. Mudar especificamente o bloco de busca para Amarelo */
+.wy-side-nav-search {
+    background-color: #f1c40f !important; /* Amarelo "Flat" */
+    color: #333 !important; /* Cor do texto dentro do bloco de busca */
+}
+
+/* Ajuste para o texto do nome do projeto no bloco amarelo */
+.wy-side-nav-search > a, .wy-side-nav-search .wy-dropdown > a {
+    color: #333 !important;
+}
+
+/* 3. Mudar o fundo do conteúdo principal para um cinza bem claro */
+.wy-nav-content-wrap {
+    background: #f5f5f5 !important;
+}
