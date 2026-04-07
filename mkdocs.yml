@@ -3,8 +3,8 @@ site_author: Guilherme Vaz
 theme:
   name: readthedocs
 
-  extra_css:
-  - stylesheets/extra.css
+extra_css:
+- stylesheets/extra.css
  
 nav:
   - 'Home': 'index.md'

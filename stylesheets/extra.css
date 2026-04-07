@@ -1,6 +1,15 @@
+/* Remove o limite de largura para aproveitar telas UltraWide */
+.wy-nav-content-wrap {
+    max-width: none !important;
+}
+
+.wy-nav-content {
+    max-width: none !important;
+}
+
 /* Muda a cor de fundo da área de texto principal */
 .wy-nav-content-wrap {
-    background: #e2debd; /* Cor clara padrão */
+    background: #faf9f2; /* Cor clara padrão */
 }
 
 /* Se quiser colocar uma imagem de fundo (ex: um mapa suave) */
