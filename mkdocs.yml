@@ -1,0 +1,12 @@
+site_name: Documentação - Classificaçõa Pastagem Santa Catarina
+site_author: Guilherme Vaz
+theme:
+  name: readthedocs
+ 
+nav:
+  - 'Home': 'index.md'
+  - 'Ingestão de Dados': 'readme_teste.md'
+  - 'Pré-processamento': 'Pré processamento dos dados.md'
+  - 'Conversão de estrutura Matricial': 'Conversão de estrutura Matricial.md'
+  - 'Hierarquização': 'Hierarquização.md'
+  - 'Integração Fundiária e Ambiental': 'Integração Fundiária e Ambiental.md'
