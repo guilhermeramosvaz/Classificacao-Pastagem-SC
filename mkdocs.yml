@@ -2,7 +2,6 @@ site_name: Documentação - Classificaçõa Pastagem Santa Catarina
 site_author: Guilherme Vaz
 theme:
   name: readthedocs
-  custom_dir: theme_and_images/
 
 extra_css:
   - stylesheets/extra.css
