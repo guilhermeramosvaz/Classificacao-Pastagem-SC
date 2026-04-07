@@ -1,0 +1,20 @@
+/* Muda a cor de fundo da área de texto principal */
+.wy-nav-content-wrap {
+    background: #e2debd; /* Cor clara padrão */
+}
+
+/* Se quiser colocar uma imagem de fundo (ex: um mapa suave) */
+.wy-nav-content {
+    background-image: url('caminho/da/sua/imagem.png');
+    background-size: cover;
+}
+
+/* Uma caixa especial para destacar seus mapas ou análises */
+.caixa-geoprocessamento {
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #eaf2f8;
+    margin-bottom: 20px;
+}
+
