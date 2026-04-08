@@ -3,7 +3,7 @@
 [//]:#(imagem_pastagem)
 <br>
 <div align="center">
-    <img src="../images/campo_DSC_0630_25_11_2025_15_23.jpg" width="100%" alt="Foto_pastagem_Vieira_Mesquita(11/2025)">
+    <img src="/docs/images/campo_DSC_0630_25_11_2025_15_23.jpg" width="100%" alt="Foto_pastagem_Vieira_Mesquita(11/2025)">
     <p><i>Figura 1: Lapig(11/2025).</i></p>
 </div>
 
@@ -35,7 +35,7 @@
 
 | | |
 |:---:|:---:|
-|This research was supported by Epagri| <div align="center"> <img src="../images/epagri.png" width="65%" alt="Processo de Operacionalização"> </div>|
-|This research was supported by LAPIG/UFG|<div align="center"> <img src="../images/LAPIG Logo.png" width="25%" alt="Processo de Operacionalização"> </div>|
-|This research was supported by Remapgeo|<div align="center"> <img src="../images/REMAPgeo.png" width="120%" alt="Processo de Operacionalização"> </div>|
+|This research was supported by Epagri| <div align="center"> <img src="/docs/images/epagri.png" width="65%" alt="Processo de Operacionalização"> </div>|
+|This research was supported by LAPIG/UFG|<div align="center"> <img src="/docs/images/LAPIG Logo.png" width="25%" alt="Processo de Operacionalização"> </div>|
+|This research was supported by Remapgeo|<div align="center"> <img src="/docs/images/REMAPgeo.png" width="120%" alt="Processo de Operacionalização"> </div>|
 
