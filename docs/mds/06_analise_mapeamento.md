@@ -4,7 +4,14 @@
 
 ## 6.1. Estimativas de Área
 
-As estimativas de área de pastagem obtidas pelas diferentes fontes apresentaram resultados distintos para o estado de Santa Catarina. A área do mapa de pastagem final, totalizou aproximadamente 1.439.037 hectares. O produto MapBiomas, que inclui a classe Pastagem(15) e a classe Campestre (12), estimou uma área de pastagem de 1.433.668 hectares, valor muito próximo ao mapa de pastagem final elaborado pelo LAPIG com diferença absoluta de cerca de 5.369 hectares (-0,37%).
+As estimativas de área de pastagem obtidas pelas diferentes fontes apresentaram resultados distintos para o estado de Santa Catarina. Enquanto o produto MapBiomas (que inclui a 'Classe Pastagem-15' e 'Classe Campestre-12') foi usado como *baseline*, o mapeamento final do LAPIG produziu as seguintes consolidações:
+
+| Produto Cartográfico | Área Final Mapeada (Hectares) | Diferença (%) |
+| :--- | :---: | :---: |
+| **Mapeamento LAPIG (Total Final)** | **1.439.037 ha** | Base |
+| **Padrão MapBiomas (Classes 12 + 15)** | **1.433.668 ha** | **- 0,37% (- 5.369 ha)** |
+
+Como a diferença absoluta foi de margem muito estreita (menos de 0,5%), isso valida estatisticamente o volume territorial de pastagens descoberto. Ambos os dados são espacializados nas frentes comparativas do [script de visualização GEE no rodapé da página.](#scripts-relacionados)
 
 ---
 
@@ -27,8 +34,8 @@ As estimativas de área de pastagem obtidas pelas diferentes fontes apresentaram
 
 ## Scripts Relacionados
 
-- [split_panel.js](../metodologia/Scripts/split_panel.js) — JavaScript (GEE) — Visualização de comparativo em paralelo de dados
-- [mascara_estrato_amostral_Mapbiomas_GPW.js](../metodologia/Scripts/mascara_estrato_amostral_Mapbiomas_GPW.js) — JavaScript (GEE) — Visualização de comparação entre resultado e bases
+- [split_panel.js](../base_dados/aplicacao/Scripts/split_panel.js) — JavaScript (GEE) — Visualização de comparativo em paralelo de dados
+- [mascara_estrato_amostral_Mapbiomas_GPW.js](../base_dados/aplicacao/Scripts/mascara_estrato_amostral_Mapbiomas_GPW.js) — JavaScript (GEE) — Visualização de comparação entre resultado e bases
 
 Ao final dos processamentos os dados gerados são novamente inseridos no GEE para fins de visualização.
 

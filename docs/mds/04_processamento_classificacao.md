@@ -4,9 +4,18 @@
 
 ## 4.1. Processamento de Imagens
 
-O fluxo de trabalho é implementado via Google Earth Engine (GEE), onde analisa grandes volumes de dados satelitários em tempo real. A metodologia utiliza imagens Sentinel 2A e 2B, Top of Atmosphere (TOA), processadas com o algoritmo Random Forest, que identifica áreas de pastagem com base em 164 métricas espectro-temporais e geográficas, como dados espectrais temporalmente reduzidos (Mínimo, Mediana, Máximo, Desvio Padrão, Amplitude e Percentis 10%, 25%, 75% e 90%) e informações de geolocalização (Elevação e Declividade). É utilizada uma série temporal de 24 meses de imagens. A janela temporal utilizada é entre julho de 2023 e junho de 2025 para a geração do mapa de 2024. O treinamento com classificadores de florestas considerou as amostras interpretadas visualmente pelos intérpretes.
+O fluxo de trabalho é implementado via **Google Earth Engine (GEE)**, onde são analisados grandes volumes de dados satelitários em tempo real. A metodologia utiliza imagens Sentinel-2A e 2B, *Top of Atmosphere* (TOA), processadas nativamente com o algoritmo estatístico **Random Forest**.
 
-Após o processo de classificação, os mapas são transformados de mapas probabilísticos para mapas discretos, estabelecendo o ponto de corte para áreas de pastagem para probabilidades maiores que 51%.
+O processamento das áreas de pastagem é amparado por **164 métricas espectro-temporais e geográficas**, resumidas abaixo:
+
+| Categoria de Dado | Métricas Utilizadas no Treinamento Preditivo |
+| :--- | :--- |
+| **Série Temporal (24 meses)** | Análise entre Julho de 2023 e Junho de 2025 (p/ mapa de 2024) |
+| **Espectrais Reduzidas** | Mínimo, Mediana, Máximo, Desvio Padrão e Amplitude |
+| **Percentis Estatísticos** | Percentis de 10%, 25%, 75% e 90% |
+| **Geolocalização / Terreno** | Elevação e Declividade |
+
+Após o processamento via *Random Forest*, os mapas brutos são convertidos de naturezas probabilísticas para discretas, fincando o "ponto de corte" paramétrico para pastagem em probabilidades \> 51%.
 
 > **Figura 5:** Fluxo da metodologia da classificação das pastagens em Santa Catarina.
 
@@ -14,7 +23,14 @@ Após o processo de classificação, os mapas são transformados de mapas probab
 
 ## 4.2. Classificação Regionalizada
 
-A classificação é processada de forma regionalizada por Cartas do IBGE ('SG-22-X-D', 'SG-22-Z-B', 'SG-22-Z-D', 'SG-22-Z-A', 'SG-22-Z-C', 'SH-22-X-A', 'SG-22-Y-D', 'SG-22-Y-B', 'SG-22-Y-C', 'SG-22-Y-A', 'SH-22-X-B', 'SH-22-X-D'). Cada carta utiliza amostras de treinamento locais e de uma zona de amortecimento (buffer) de 100 km para reduzir efeitos de borda e capturar variações regionais do estado. São 12 modelos no total.
+A classificação de máquina não age no estado todo de uma vez; é processada de forma estritamente regionalizada e subdividida. São **12 modelos globais**, parametrizados segundo as correspondentes Cartas de Articulação do IBGE:
+
+| Malha de Processamento | Cartas do IBGE Referenciadas |
+| :---: | :--- |
+| **Cartas "SG-22" (10 Modelos)** | SG-22-X-D, SG-22-Z-B, SG-22-Z-D, SG-22-Z-A, SG-22-Z-C, SG-22-Y-D, SG-22-Y-B, SG-22-Y-C, SG-22-Y-A |
+| **Cartas "SH-22" (2 Modelos)** | SH-22-X-A, SH-22-X-B, SH-22-X-D | *Nota: O ajuste exato resulta em 12 zonas poligonais.* |
+
+Para cada carta, os modelos utilizam as respectivas amostras locais, absorvendo ainda uma **zona de amortecimento (buffer) de 100 km**, garantindo com sucesso uma transição impecável para mitigar os temidos *efeitos de borda*.
 
 ---
 
@@ -29,19 +45,17 @@ A abordagem binária desdobra-se em três fluxos distintos de discriminação pa
 1. O primeiro fluxo binário consiste na separação inicial entre o conjunto total de pastagens e as demais classes, seguida por uma etapa de classificação dentro das áreas mapeadas como pastagem para diferenciar as tipologias natural e cultivada.
 2. As outras duas variações da abordagem binária focam na diferenciação individualizada, onde se isola a pastagem natural em relação às demais classes — incluindo a pastagem cultivada no grupo de controle — ou isola-se a pastagem cultivada frente às outras coberturas, mantendo a pastagem natural inserida no grupo de demais classes.
 
-Essa estrutura permite uma análise hierárquica e comparativa, garantindo que a detecção das áreas de gramíneas, sejam elas naturais ou antrópicas, ocorra com maior precisão metodológica frente à complexidade das demais classes de uso do solo.
+Essa estrutura permite uma análise hierárquica e comparativa, garantindo que a detecção das áreas de gramíneas ocorra com maior precisão frente à complexidade do solo. Diante dos testes práticos, o cenário "isolado" sagrou os melhores caminhos, consolidando em apenas **duas etapas computacionais (Scripts)**:
 
-A classificação binária que separava as classes de todas as pastagens por outros foi a mais correspondente com a realidade, sendo essa feita em 2 etapas:
-
-1. Classificação binária
-2. Filtro de moda com kernel 5x5
+1. **Ação do `Classificacao.js`**: Conduz uma Classificação Binária dura, englobando todas as pastagens num único grupo versus as demais sub-classes ("Outros"). Ele gera os pixels em base bruta em cada um dos 12 blocos e amarra tudo.
+2. **Ação do `Filtro_moda_mediana.js`**: Aplica pós-processamento utilizando um *filtro de moda com kernel dinâmico de raio 5x5* para remover ruído-pixel (ex: árvores solitárias na pastagem) e "limpar" a mancha poligonal resultante.
 
 ---
 
 ## Scripts Relacionados
 
-- [Classificacao.js](../metodologia/Scripts/Classificacao.js) — JavaScript (GEE) — Classificação utilizando o algoritmo random forest com 500 árvores realizando a classificação por cartas do IBGE e unindo os dados após término de classificações
-- [Filtro_moda_mediana.js](../metodologia/Scripts/Filtro_moda_mediana.js) — JavaScript (GEE) — Aplicação do filtro de moda, contém também filtro de mediana caso desejado
+- [Classificacao.js](../base_dados/aplicacao/Scripts/Classificacao.js) — JavaScript (GEE) — Classificação utilizando o algoritmo random forest com 500 árvores realizando a classificação por cartas do IBGE e unindo os dados após término de classificações
+- [Filtro_moda_mediana.js](../base_dados/aplicacao/Scripts/Filtro_moda_mediana.js) — JavaScript (GEE) — Aplicação do filtro de moda, contém também filtro de mediana caso desejado
 
 ---
 

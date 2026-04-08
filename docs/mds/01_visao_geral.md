@@ -26,6 +26,14 @@ A apresentação metodológica utiliza imagens do satélite Sentinel-2A e 2B (TO
 
 ---
 
+## 1.4. Principais Resultados 
+
+O mapeamento resultou em uma área total aproximada de **1.439.037 hectares de pastagens** identificadas em Santa Catarina, valor altamente coeso com a base de referência do Mapbiomas (diferença absoluta de apenas -0,37%).
+
+Todo este fluxo metodológico está devidamente organizado e fragmentado em códigos e tarefas computacionais. Para replicar ou entender em nível técnico as execuções, acesse a etapa de [Passo a Passo e Processos Metodológicos](./08_passo_a_passo.md).
+
+---
+
 ## Equipe
 
 **Coordenador geral:** Laerte Guimarães Ferreira Jr.

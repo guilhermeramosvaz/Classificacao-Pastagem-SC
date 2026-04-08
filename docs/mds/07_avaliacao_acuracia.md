@@ -8,15 +8,21 @@ A classificação binária da pastagem para o estado de Santa Catarina, apresent
 
 ---
 
-## 7.2. Acurácia do Produtor e Erros de Omissão
+## 7.2. Tabela de Métricas de Validação e Erros Individuais
 
-A acurácia do produtor (PA) mensura a capacidade do classificador em identificar corretamente as áreas de referência de cada classe. Para a Classe 0 (Não-Pastagem/Outros), a acurácia do produtor atingiu 98,12%, com erro de omissão correspondente de apenas 1,88%. Para a Classe 1 (Pastagem), a acurácia do produtor foi de 85,25%, com erro de omissão de 14,75%. Esse resultado indica que aproximadamente 15% das áreas de pastagem reais não foram detectadas pelo classificador, sendo alocadas na classe Outros. Esse padrão é comum em classificações de pastagem em regiões com alta heterogeneidade de cobertura do solo, onde áreas de pastagem degradada ou em transição podem apresentar resposta espectral similar a outras classes de vegetação.
+A consolidação de erro cruza duas ópticas. A **Acurácia do Produtor (PA)** mensura a capacidade do classificador de fato encontrar os locais que eram pastagens confirmadas na superfície, sendo seu reverso o Erro de Omissão (quando o modelo não detectou e omitiu a área). A **Acurácia do Usuário (UA)** mede o grau de pureza do desenho, ou seja, quantas áreas geradas são realmente do alvo, sendo seu reverso o Erro de Comissão (quando o modelo excede e desenha grama onde não há).
 
----
+| Parâmetro Preditivo | Classe 0 (Outros/Não-Pastagem) | Classe 1 (Pastagem) |
+| :--- | :---: | :---: |
+| **Acurácia do Produtor (PA)** | 98,12% | **85,25%** |
+| **Erro associado (Omissão)** | 1,88% | **14,75%** |
+| | | |
+| **Acurácia do Usuário (UA)** | 97,86% | **86,84%** |
+| **Erro associado (Comissão)** | 2,14% | **13,16%** |
 
-## 7.3. Acurácia do Usuário e Erros de Comissão
+Esses resultados indicam que cerca de 15% das áreas de pastagens reais escorregaram nas malhas e foram subestimadas na classe *Outros*. Ao mesmo tempo, dentre tudo que se desenhou como pastagem, há "gorduras" estatísticas de 13% de detecções alheias de uso e cobertura do solo. 
 
-A acurácia do usuário mede a probabilidade de que uma área mapeada como pertencente a uma determinada classe represente de fato essa classe no campo. Para a Classe 0 (Outros), a acurácia do usuário foi de 97,86%, com erro de comissão de 2,14%, indicando que apenas uma pequena fração das áreas classificadas como Outros corresponde, na realidade, a áreas de pastagem. Para a Classe 1 (Pastagem), a acurácia do usuário foi de 86,84%, com erro de comissão de 13,16%, o que significa que cerca de 13% das áreas mapeadas como pastagem correspondem, na verdade, a outras classes de uso e cobertura do solo.
+Esse padrão é comum em classificações florestais, dadas as altas complexidades heterogêneas do solo (ex: pastagens degradadas, relevos ou capoeiras em transição), onde a resposta de infravermelho de *Outros* emula o tapete de *Gramíneas*.
 
 ---
 
@@ -27,4 +33,4 @@ A acurácia do usuário mede a probabilidade de que uma área mapeada como perte
 ---
 
 **Etapa anterior:** [Etapa 6 — Análise do Mapeamento](./06_analise_mapeamento.md)  
-**Voltar ao índice:** [README](./README.md)
+**Voltar ao índice:** [Home](../index.md)
