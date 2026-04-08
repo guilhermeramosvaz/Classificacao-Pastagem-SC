@@ -34,22 +34,5 @@ Todo este fluxo metodológico está devidamente organizado e fragmentado em cód
 
 ---
 
-## Equipe
-
-**Coordenador geral:** Laerte Guimarães Ferreira Jr.
-
-**Coordenadores técnicos:** Poliana Vieira dos Prazeres, Vinicius Vieira Mesquita, Ana Paula Mattos e Silva
-
-**Equipe:** Ana Paula Carlos Assunção, Felipe Souza de Jesus, Guilherme Vaz
-
----
-
-## Instituições Parceiras
-
-- [LAPIG/UFG](https://www.lapig.iesa.ufg.br/) — Laboratório de Processamento de Imagens e Geoprocessamento
-- [Remapgeo](https://www.remapgeo.com/) — Empresa de Consultoria em Geotecnologias
-- [Epagri](https://www.epagri.sc.gov.br/) — Empresa de Pesquisa Agropecuária e Extensão Rural de Santa Catarina
-
----
 
 **Próxima etapa:** [Etapa 2 — Integração de Dados de Referência](./02_integracao_dados.md)

@@ -1,17 +1,4 @@
 # Etapa 8 — Passo a Passo e Processos Metodológicos (Scripts)
-
----
-
-## Sumário de Processos
-Abaixo você encontra o detalhamento estruturado das etapas de processamento e os links para os respectivos **Scripts** utilizados na aplicação da metodologia de Classificação de Pastagens.
-
-1. [Definição de Metodologia](#definicao-de-metodologia)
-2. [Desenho Amostral](#desenho-amostral)
-3. [Inspeção Visual de Pontos](#inspecao-visual-de-pontos)
-4. [Classificação](#classificacao)
-5. [Preparação de dados para análise](#preparacao-de-dados-para-analise)
-6. [Refinamento e Auditoria](#refinamento-e-auditoria)
-
 ---
 
 ## Definição de metodologia
