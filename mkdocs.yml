@@ -10,7 +10,7 @@ extra_css:
   - stylesheets/extra.css
  
 nav:
-  - 'Home': 'index.md'
+  - 'Home': 'mds/index.md'
   - 'Visão Geral': 'mds/01_visao_geral.md'
   - 'Integração de Dados': 'mds/02_integracao_dados.md'
   - 'Desenho Amostral': 'mds/03_desenho_amostral.md'

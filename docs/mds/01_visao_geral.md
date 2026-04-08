@@ -39,7 +39,7 @@ A apresentação metodológica utiliza imagens do satélite Sentinel-2A e 2B (TO
 ## Instituições Parceiras
 
 - [LAPIG/UFG](https://www.lapig.iesa.ufg.br/) — Laboratório de Processamento de Imagens e Geoprocessamento
-- [Remapgeo](https://www.remapgeo.com/)
+- [Remapgeo](https://www.remapgeo.com/) — Empresa de Consultoria em Geotecnologias
 - [Epagri](https://www.epagri.sc.gov.br/) — Empresa de Pesquisa Agropecuária e Extensão Rural de Santa Catarina
 
 ---
