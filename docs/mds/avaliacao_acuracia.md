@@ -2,9 +2,6 @@
 
 ---
 
-<img src="../base_dados/images/splt_pnl.gif" width="500">
-<br>
-
 ## Acurácia Global e Estatísticas Gerais
 
 A classificação binária da pastagem para o estado de Santa Catarina, apresentou desempenho geral satisfatório. A avaliação foi conduzida com base em 405 amostras, após a remoção de 82 amostras de bordas de um total original de 487 pontos sorteados. Os pontos sorteados foram inspecionados por 3 intérpretes independentes. A avaliação dos indicadores de erro de alocação e de quantidade foram, respectivamente, 3,28% e 0,23%.

@@ -1,8 +1,9 @@
 # Análise do Mapeamento
 
 ---
+![split_panel_gif](../base_dados/images/splt_pnl.gif)
 
-<img src="caminho-do-seu-arquivo.gif" width="500" align="center">
+---
 
 ## Estimativas de Área
 
