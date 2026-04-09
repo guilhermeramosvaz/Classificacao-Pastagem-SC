@@ -1,4 +1,4 @@
-# Passo a Passo e Processos Metodológicos (Scripts)
+# Processos Metodológicos (Scripts)
 ---
 
 ## Definição de metodologia
@@ -11,6 +11,13 @@ A metodologia de classificação utilizando o algoritmo Random Forest descrita n
 
 ## Desenho amostral
 Foi realizado o Sorteio aleatório estratificado proporcionalmente pelos estratos secundários e uniforme para as 3 classes resultantes das máscaras de referência (Mapbiomas uso e cobertura e Global Pasture Watch) ambas contendo as classes de pastagem natural, cultivada e outros. especificamente a máscara do mapbiomas resumiu todas as classes que não fossem vegetação campestre, pastagem e mosaico de usos foram classificadas com "outros" para evitar confusão com todas as outras classes que não são o foco da pesquisa.
+
+Scripts relacionados a esta etapa:
+<ul>
+    <li><a href="https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/docs/base_dados/aplicacao/Scripts/mascara_estrato_amostral_Mapbiomas_GPW.js"> Geração da máscara de estrato amostral </a> (GEE JavaScript)</li>
+    <li><a href="https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/docs/base_dados/aplicacao/Scripts/amostras_treinamento_sc_remap.R"> Sorteio Aleatório Estratificado </a> (R)</li>
+    <li><a href="https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/docs/base_dados/aplicacao/Scripts/amostras_treinamento_sc_remap_commented.R"> Sorteio Aleatório Estratificado (Comentado) </a> (R)</li>
+</ul>
 <br>
 
 
@@ -37,6 +44,11 @@ A metodologia realizada pelo mapbiomas de classificação de áreas de pastagem 
 Após a classificação ser finalizada foram realizados uma série de procedimentos para a etapa de refinamento. Sendo eles a separação dos tiles de acordo com as regiões separadas para cada interprete. Conferir os dados separados e organizar uma planilha de controle e preparação dos demais processos, como o de união dos dados ao finalizar as etapas de refinamento e auditoria. Os processos realizados nessa etapa são os mesmos tanto em fase de refinamento quanto de auditoria. Scripts referentes a estes processos:
     <ul>
         <li><a href="https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/docs/base_dados/aplicacao/Scripts/recorte_automatizado.sh"> Scripts Automatizados de Recorte </a> (.sh)</li>
+        <li><a href="https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/docs/base_dados/aplicacao/Scripts/salvar_em_pastas_yamlTIF.sh"> Salvamento das Alterações ThRasE </a> (.sh)</li>
+        <li><a href="https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/docs/base_dados/aplicacao/Scripts/listar.py"> Listagem de Metadados </a> (Python)</li>
+        <li><a href="https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/docs/base_dados/aplicacao/Scripts/listar_nodata_tipo_p_lista_RASTER_v2.sh"> Auditoria de Metadados QA/QC </a> (.sh)</li>
+        <li><a href="https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/docs/base_dados/aplicacao/Scripts/gdal_calc_nodata.sh"> Cálculos NoData (GDAL) </a> (.sh)</li>
+        <li><a href="https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/docs/base_dados/aplicacao/Scripts/reclassificar_raster_yaml.sh"> Reclassificação de Raster </a> (.sh)</li>
         <li><a href="https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/docs/base_dados/aplicacao/Scripts/uniao_de_dados.sh"> Scripts de União de Dados </a> (.sh)</li>
     </ul>
 <br>
@@ -45,3 +57,14 @@ Após a classificação ser finalizada foram realizados uma série de procedimen
 
 ## Refinamento e Auditoria
 Utilizando o software <a href="https://qgis.org/"> Qgis </a> juntamente com o plug-in <a href="https://github.com/SMByC/ThRasE"> thRasE </a> e imagens sentinel, possibilitaram a atividade de refinamento e auditoria dos dados recortados por regiões.
+
+---
+
+## Análise do Mapeamento Final
+
+Ao final de todas as classificações e consolidações, os mapas são retornados para o GEE para compor dashboards de análises comparativas do material de saída com camadas de origem.
+
+<ul>
+    <li><a href="https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/docs/base_dados/aplicacao/Scripts/split_panel.js"> Visualização Split Panel Comparações </a> (GEE JavaScript)</li>
+</ul>
+<br>
