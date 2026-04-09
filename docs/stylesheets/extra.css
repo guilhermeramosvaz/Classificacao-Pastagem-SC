@@ -80,3 +80,19 @@
     background: #fdfdfd !important;
 }
 
+/* 5. Justificar parágrafos de texto */
+.wy-nav-content p {
+    text-align: justify;
+}
+
+/* Garantir que containers centralizados, imagens e GIFs continuem centralizados */
+.wy-nav-content div[align="center"],
+.wy-nav-content div[align="center"] p,
+.wy-nav-content img[align="center"],
+.wy-nav-content .center-content {
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+

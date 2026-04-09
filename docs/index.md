@@ -9,16 +9,12 @@
 
 [//]: #(Introducao)
 <h2 align="Left">Introdução</h2>
-<div align="justify"> 
-    Trabalho de mapeamento das pastagens do estado de Santa Catarina para o ano de 2024 realizado pela parceria entre Lapig e Remapgeo. Utilizando imagens do satélite Sentinel 2A/B com 10 metros de resolução espacial, dados de referência do Mapbiomas e Global Pasture Watch, foi possível gerar uma classificação supervisionada para todo o estado, realizada com o Algorítmo Random Forest, descrita em <a href="mds/01_visao_geral.md">Visão Geral</a>.
-</div>
+Trabalho de mapeamento das pastagens do estado de Santa Catarina para o ano de 2024 realizado pela parceria entre Lapig e Remapgeo. Utilizando imagens do satélite Sentinel 2A/B com 10 metros de resolução espacial, dados de referência do Mapbiomas e Global Pasture Watch, foi possível gerar uma classificação supervisionada para todo o estado, realizada com o Algorítmo Random Forest, descrita em <a href="mds/visao_geral.md">Visão Geral</a>.
 <br>
 
 [//]: #(Base_de_dados)
 <h2 align="Left">Bases de dados</h2>
-<div align="justify"> 
-    Foram utilizados como dados de referência os dados de pastagem <a href="https://brasil.mapbiomas.org/">Mapbiomas</a> e global pasture watch do <a href="https://landcarbonlab.org/about-global-pasture-watch/">Land & Carbon Lab</a> para gerar os pontos utilizados.
-</div>
+Foram utilizados como dados de referência os dados de pastagem <a href="https://brasil.mapbiomas.org/">Mapbiomas</a> e global pasture watch do <a href="https://landcarbonlab.org/about-global-pasture-watch/">Land & Carbon Lab</a> para gerar os pontos utilizados.
 <br>
 
 [//]: #(Requisitos)
@@ -42,7 +38,7 @@
     <ul>
         <li><b>Coordenador geral:</b> Laerte Guimarães Ferreira Jr.</li>
         <li><b>Coordenadores técnicos:</b> Poliana Vieira dos Prazeres, Vinicius Vieira Mesquita, Ana Paula Mattos e Silva</li>
-        <li><b>Equipe:</b> Ana Paula Carlos Assunção, Felipe Souza de Jesus, Guilherme Vaz</li>
+        <li><b>Equipe:</b> Ana Paula Assunção, Felipe Jesus, Guilherme Vaz</li>
     </ul>    
 </div>
 <br>
