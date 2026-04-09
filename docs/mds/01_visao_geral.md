@@ -4,6 +4,13 @@
 
 ---
 
+[//]:#(imagem_splitpanel)
+<br>
+<div align="center">
+    <img src="base_dados/images/campo_DSC_0630_25_11_2025_15_23.jpg" width="100%" alt="split_panel">
+    <p><i>Figura 1: Lapig(11/2025).</i></p>
+</div>
+
 ## 1.1. Introdução
 
 As áreas de pastagem no Brasil têm sido viabilizadas principalmente pelo aumento da produtividade da pecuária como um todo, especialmente nas áreas de pastagens que permaneceram ativas (Filho, 2014). As pastagens naturais de Santa Catarina vêm sendo, há várias décadas, substituídas por outras atividades econômicas, especialmente grãos (milho, soja, trigo), florestas cultivadas e horticultura (Córdova, et al, 2024). Tradicionalmente, os campos foram usados para pecuária extensiva, principalmente de gado de corte, com manejo baseado no pastejo direto.
