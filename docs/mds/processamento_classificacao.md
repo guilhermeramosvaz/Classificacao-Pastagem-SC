@@ -54,8 +54,8 @@ Essa estrutura permite uma análise hierárquica e comparativa, garantindo que a
 
 ## Scripts Relacionados
 
-- [Classificacao.js](https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/base_dados/aplicacao/Scripts/Classificacao.js) — JavaScript (GEE) — Classificação utilizando o algoritmo random forest com 500 árvores realizando a classificação por cartas do IBGE e unindo os dados após término de classificações
-- [Filtro_moda_mediana.js](https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/base_dados/aplicacao/Scripts/Filtro_moda_mediana.js) — JavaScript (GEE) — Aplicação do filtro de moda, contém também filtro de mediana caso desejado
+- [Classificacao.js](https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/docs/base_dados/aplicacao/Scripts/Classificacao.js) — JavaScript (GEE) — Classificação utilizando o algoritmo random forest com 500 árvores realizando a classificação por cartas do IBGE e unindo os dados após término de classificações
+- [Filtro_moda_mediana.js](https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/docs/base_dados/aplicacao/Scripts/Filtro_moda_mediana.js) — JavaScript (GEE) — Aplicação do filtro de moda, contém também filtro de mediana caso desejado
 
 ---
 

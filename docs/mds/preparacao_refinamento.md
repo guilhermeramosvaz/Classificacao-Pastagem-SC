@@ -65,13 +65,13 @@ Na etapa de **Controle de Qualidade Analítico (QA/QC)**:
 
 ## Scripts Relacionados
 
-- [recorte_automatizado.sh](https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/base_dados/aplicacao/Scripts/recorte_automatizado.sh) — Shell (WSL/Linux) — Recorte e reprojeção dos tiles para distribution por intérprete
-- [salvar_em_pastas_yamlTIF.sh](https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/base_dados/aplicacao/Scripts/salvar_em_pastas_yamlTIF.sh) — Shell (WSL/Linux) — Salvamento das alterações do ThRasE (YAML → TIF)
-- [listar.py](https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/base_dados/aplicacao/Scripts/listar.py) — Python — Listagem de metadados dos arquivos raster
-- [listar_nodata_tipo_p_lista_RASTER_v2.sh](https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/base_dados/aplicacao/Scripts/listar_nodata_tipo_p_lista_RASTER_v2.sh) — Shell (WSL/Linux) — Listagem de NoData, tipo e propriedades dos rasters
-- [gdal_calc_nodata.sh](https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/base_dados/aplicacao/Scripts/gdal_calc_nodata.sh) — Shell (WSL/Linux) — Cálculo e tratamento de valores NoData
-- [reclassificar_raster_yaml.sh](https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/base_dados/aplicacao/Scripts/reclassificar_raster_yaml.sh) — Shell (WSL/Linux) — Reclassificação de raster com base em YAML
-- [uniao_de_dados.sh](https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/base_dados/aplicacao/Scripts/uniao_de_dados.sh) — Shell (WSL/Linux) — União e alinhamento dos dados refinados/auditados
+- [recorte_automatizado.sh](https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/docs/base_dados/aplicacao/Scripts/recorte_automatizado.sh) — Shell (WSL/Linux) — Recorte e reprojeção dos tiles para distribution por intérprete
+- [salvar_em_pastas_yamlTIF.sh](https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/docs/base_dados/aplicacao/Scripts/salvar_em_pastas_yamlTIF.sh) — Shell (WSL/Linux) — Salvamento das alterações do ThRasE (YAML → TIF)
+- [listar.py](https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/docs/base_dados/aplicacao/Scripts/listar.py) — Python — Listagem de metadados dos arquivos raster
+- [listar_nodata_tipo_p_lista_RASTER_v2.sh](https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/docs/base_dados/aplicacao/Scripts/listar_nodata_tipo_p_lista_RASTER_v2.sh) — Shell (WSL/Linux) — Listagem de NoData, tipo e propriedades dos rasters
+- [gdal_calc_nodata.sh](https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/docs/base_dados/aplicacao/Scripts/gdal_calc_nodata.sh) — Shell (WSL/Linux) — Cálculo e tratamento de valores NoData
+- [reclassificar_raster_yaml.sh](https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/docs/base_dados/aplicacao/Scripts/reclassificar_raster_yaml.sh) — Shell (WSL/Linux) — Reclassificação de raster com base em YAML
+- [uniao_de_dados.sh](https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/docs/base_dados/aplicacao/Scripts/uniao_de_dados.sh) — Shell (WSL/Linux) — União e alinhamento dos dados refinados/auditados
 
 ## Requisitos
 

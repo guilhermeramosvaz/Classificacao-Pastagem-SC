@@ -44,7 +44,7 @@ O produto desta etapa (operado através do [script citado no rodapé](#scripts-r
 
 ## Scripts Relacionados
 
-- [mascara_estrato_amostral_Mapbiomas_GPW.js](https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/base_dados/aplicacao/Scripts/mascara_estrato_amostral_Mapbiomas_GPW.js) — JavaScript (GEE) — Geração da máscara de estrato amostral a partir da combinação MapBiomas e GPW
+- [mascara_estrato_amostral_Mapbiomas_GPW.js](https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/docs/base_dados/aplicacao/Scripts/mascara_estrato_amostral_Mapbiomas_GPW.js) — JavaScript (GEE) — Geração da máscara de estrato amostral a partir da combinação MapBiomas e GPW
 
 ---
 

@@ -26,8 +26,8 @@ Utilizando as 12440 amostras de treinamento geradas para o estado de Santa Catar
 ## Classificação
 A metodologia realizada pelo mapbiomas de classificação de áreas de pastagem foi adaptanda pois a possibilidade de classificar áreas de pastagem naturais e pastagens cultivadas foi explorada em testes. A classificação binária que separava as classes de todas as pastagens por outros foi a mais correspondente com a realidade, sendo essa feita em 2 etapas, apontadas nos scripts abaixo:
     <ul>
-        <li><a href="https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/base_dados/aplicacao/Scripts/Classificacao.js"> Classificação binária </a> (GEE JavaScript)</li>
-        <li><a href="https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/base_dados/aplicacao/Scripts/Filtro_moda_mediana.js"> Filtro de moda com kernel 5x5 </a> (GEE JavaScript)</li>
+        <li><a href="https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/docs/base_dados/aplicacao/Scripts/Classificacao.js"> Classificação binária </a> (GEE JavaScript)</li>
+        <li><a href="https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/docs/base_dados/aplicacao/Scripts/Filtro_moda_mediana.js"> Filtro de moda com kernel 5x5 </a> (GEE JavaScript)</li>
     </ul>
 <br>
 
@@ -36,8 +36,8 @@ A metodologia realizada pelo mapbiomas de classificação de áreas de pastagem 
 ## Preparação de dados para análise
 Após a classificação ser finalizada foram realizados uma série de procedimentos para a etapa de refinamento. Sendo eles a separação dos tiles de acordo com as regiões separadas para cada interprete. Conferir os dados separados e organizar uma planilha de controle e preparação dos demais processos, como o de união dos dados ao finalizar as etapas de refinamento e auditoria. Os processos realizados nessa etapa são os mesmos tanto em fase de refinamento quanto de auditoria. Scripts referentes a estes processos:
     <ul>
-        <li><a href="https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/base_dados/aplicacao/Scripts/recorte_automatizado.sh"> Scripts Automatizados de Recorte </a> (.sh)</li>
-        <li><a href="https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/base_dados/aplicacao/Scripts/uniao_de_dados.sh"> Scripts de União de Dados </a> (.sh)</li>
+        <li><a href="https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/docs/base_dados/aplicacao/Scripts/recorte_automatizado.sh"> Scripts Automatizados de Recorte </a> (.sh)</li>
+        <li><a href="https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/docs/base_dados/aplicacao/Scripts/uniao_de_dados.sh"> Scripts de União de Dados </a> (.sh)</li>
     </ul>
 <br>
 

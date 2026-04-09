@@ -32,7 +32,7 @@ A série temporal assistida na tela do TVI compreendeu as janelas completas dos 
 
 ## Scripts Relacionados
 
-- [amostras_treinamento_sc_remap.R](https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/base_dados/aplicacao/Scripts/amostras_treinamento_sc_remap.R) — R — Sorteio aleatório estratificado dos pontos de treinamento a partir da relação MapBiomas × GPW
+- [amostras_treinamento_sc_remap.R](https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/docs/base_dados/aplicacao/Scripts/amostras_treinamento_sc_remap.R) — R — Sorteio aleatório estratificado dos pontos de treinamento a partir da relação MapBiomas × GPW
 
 ## Dados de Saída
 

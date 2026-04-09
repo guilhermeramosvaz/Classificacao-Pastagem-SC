@@ -37,8 +37,8 @@ Como a diferença absoluta foi de margem muito estreita (menos de 0,5%), isso va
 
 ## Scripts Relacionados
 
-- [split_panel.js](https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/base_dados/aplicacao/Scripts/split_panel.js) — JavaScript (GEE) — Visualização de comparativo em paralelo de dados
-- [mascara_estrato_amostral_Mapbiomas_GPW.js](https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/base_dados/aplicacao/Scripts/mascara_estrato_amostral_Mapbiomas_GPW.js) — JavaScript (GEE) — Visualização de comparação entre resultado e bases
+- [split_panel.js](https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/docs/base_dados/aplicacao/Scripts/split_panel.js) — JavaScript (GEE) — Visualização de comparativo em paralelo de dados
+- [mascara_estrato_amostral_Mapbiomas_GPW.js](https://github.com/guilhermeramosvaz/Classificacao-Pastagem-SC/blob/main/docs/base_dados/aplicacao/Scripts/mascara_estrato_amostral_Mapbiomas_GPW.js) — JavaScript (GEE) — Visualização de comparação entre resultado e bases
 
 Ao final dos processamentos os dados gerados são novamente inseridos no GEE para fins de visualização.
 
