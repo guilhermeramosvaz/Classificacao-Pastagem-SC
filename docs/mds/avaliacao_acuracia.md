@@ -26,11 +26,5 @@ Esse padrão é comum em classificações florestais, dadas as altas complexidad
 
 ---
 
-## Link do Mapeamento
-
-🔗 [Mapeamento Pastagem SC](https://polianavi.github.io/pastagem_remap/)
-
----
-
 **Etapa anterior:** [Análise do Mapeamento](./analise_mapeamento.md)  
 **Voltar ao índice:** [Home](../index.md)

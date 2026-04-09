@@ -14,7 +14,7 @@ Trabalho de mapeamento das pastagens do estado de Santa Catarina para o ano de 2
 
 [//]: #(Base_de_dados)
 <h2 align="Left">Bases de dados</h2>
-Foram utilizados como dados de referência os dados de pastagem <a href="https://brasil.mapbiomas.org/">Mapbiomas</a> e global pasture watch do <a href="https://landcarbonlab.org/about-global-pasture-watch/">Land & Carbon Lab</a> para gerar os pontos utilizados.
+Foram utilizados como dados de referência os dados de pastagem <a href="https://brasil.mapbiomas.org/">Mapbiomas</a> e Global Pasture Watch do <a href="https://landcarbonlab.org/about-global-pasture-watch/">Land & Carbon Lab</a> para gerar os pontos utilizados.
 <br>
 
 [//]: #(Requisitos)
@@ -48,7 +48,6 @@ Foram utilizados como dados de referência os dados de pastagem <a href="https:/
 
 | | |
 |:---:|:---:|
-|Empresa de Pesquisa Agropecuária e Extensão Rural de Santa Catarina| <div align="center"> <img src="base_dados/images/epagri.png" width="85%" alt="Processo de Operacionalização"> </div>|
-|Laboratório de Processamento de Imagens e Geoprocessamento|<div align="center"> <img src="base_dados/images/LAPIG Logo.png" width="32%" alt="Processo de Operacionalização"> </div>|
+|Laboratório de Sensoriamento Remoto e Geoprocessamento|<div align="center"> <img src="base_dados/images/LAPIG Logo.png" width="32%" alt="Processo de Operacionalização"> </div>|
 |Empresa de Consultoria em Geotecnologias|<div align="center"> <img src="base_dados/images/REMAPgeo.png" width="180%" alt="Processo de Operacionalização"> </div>|
-
+|Empresa de Pesquisa Agropecuária e Extensão Rural de Santa Catarina| <div align="center"> <img src="base_dados/images/epagri.png" width="85%" alt="Processo de Operacionalização"> </div>|
